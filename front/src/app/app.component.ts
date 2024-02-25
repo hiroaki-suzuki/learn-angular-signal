@@ -1,6 +1,6 @@
-import { Component } from '@angular/core'
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router'
-import { MatToolbarModule } from '@angular/material/toolbar'
+import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +10,5 @@ import { MatToolbarModule } from '@angular/material/toolbar'
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'Learn Angular Signal'
+  title = 'Learn Angular Signal';
 }

@@ -1,12 +1,12 @@
-import { Injectable } from '@angular/core'
-import { HttpClient } from '@angular/common/http'
-import { filter, firstValueFrom, mergeMap, toArray } from 'rxjs'
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { filter, firstValueFrom, mergeMap, toArray } from 'rxjs';
 
 export interface User {
-  id: number
-  name: string
-  username: string
-  email: string
+  id: number;
+  name: string;
+  username: string;
+  email: string;
 }
 
 @Injectable({
@@ -20,10 +20,10 @@ export class SimplePdsUsersService {
       this.http.get<User[]>('https://jsonplaceholder.typicode.com/users').pipe(
         mergeMap((users) => users),
         filter((user) => {
-          return user.name.startsWith('C')
+          return user.name.startsWith('C');
         }),
         toArray(),
       ),
-    )
+    );
   }
 }
